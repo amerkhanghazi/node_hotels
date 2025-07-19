@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.16.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "name": "node_tut",
+  "version": "1.0.0",
+  "description": "yha se",
+  "main": "a.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amir",
+  "license": "ISC"
+}
