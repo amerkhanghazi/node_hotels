@@ -12,6 +12,6 @@ const menuItemSchema = new mongoose.Schema({
   },
   isAvailable: { type: Boolean, default: true }
 });
-
+//comment test
 const MenuItem = mongoose.model('MenuItem', menuItemSchema);
 module.exports = MenuItem;
