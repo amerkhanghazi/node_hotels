@@ -8,6 +8,7 @@ router.post('/', async (req, res) => {
   try {
     const newItem = new MenuItem(req.body);
     const savedItem = await newItem.save();
+    console.log('data posted');
     res.status(201).json(savedItem);
   } catch (error) {
     res.status(400).json({ error: error.message });

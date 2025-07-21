@@ -3,9 +3,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const connectDB = require('./db');
 const itemRoutes = require('./routes/ItemR');
+require('dotenv').config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
