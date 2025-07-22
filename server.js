@@ -2,7 +2,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const connectDB = require('./db');
-const itemRoutes = require('./routes/ItemR');
+connectDB(); // ✅ this will now work!
+const itemRoutes = require('./routes/MenuItemRoutes');
+const personRoutes = require('./routes/personRoutes');
+
+
 require('dotenv').config();
 
 const app = express();
@@ -13,6 +17,8 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/menu', itemRoutes);
+app.use('/person', personRoutes);
+console.log('✅ Person route loaded');
 
 // Server start
 app.listen(PORT, () => {
